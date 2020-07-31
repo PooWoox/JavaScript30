@@ -53,13 +53,13 @@
     // delete the comment with the ID of 823423
     const index = comments.findIndex(comment => comment.id === 823423);
     
-    comments.splice(index, 1); // Deleting without immutability
-    console.log(comments);
+    // comments.splice(index, 1); // Deleting without immutability
+    // console.log(comments);
 
     const newComments = [
       ...comments.slice(0, index),
       ...comments.slice(index + 1)
-    ];
+    ]; //Keeping the immutability concept 
 
     console.log(newComments);
     
